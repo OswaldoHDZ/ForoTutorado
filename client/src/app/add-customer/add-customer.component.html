@@ -1,9 +1,9 @@
-<h3>Add Customer</h3>
+<h3>Agregar temas</h3>
 <div [hidden]="submitted">
     <form #addCustomerForm="ngForm">
 
       <div class="form-group">
-        <label for="firstname">First Name</label>
+        <label for="firstname">Nombre del Tema</label>
         <input type="text" class="form-control" id="firstname" placeholder="Give Customer's FirstName" 
         required
         [(ngModel)]="customer.firstname" name="firstname" #firstname="ngModel">
@@ -41,6 +41,7 @@
       	<button type="button" class="btn btn-dark" (click)="addCustomer()" [disabled]="!addCustomerForm.form.valid">Add</button>
       </div>
     </form>
+    
 </div>
 
 <div [hidden]="!submitted">
