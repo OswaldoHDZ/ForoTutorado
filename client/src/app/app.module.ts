@@ -10,17 +10,20 @@ import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component';
-import { ComBarraSuperiorComponent } from './com-BarraSuperior/com-BarraSuperior.component';
-import { ComTemasComponent } from './com-temas/com-temas.component';
-
+import { BarraSuperiorComponent } from './barraSuperior/barraSuperior.component';
+import { ComentariosComponent } from './comentarios/comentarios.component';
+import { CrearTemaComponent } from './crearTema/crearTema.component';
+import { TemasComponent } from './temas/temas.component';
 @NgModule({
    declarations: [
       AppComponent,
       CustomerComponent,
       CustomerDetailsComponent,
       AddCustomerComponent,
-      ComBarraSuperiorComponent,
-      ComTemasComponent
+      BarraSuperiorComponent,
+      ComentariosComponent,
+      CrearTemaComponent,
+      TemasComponent
    ],
    imports: [
       BrowserModule,

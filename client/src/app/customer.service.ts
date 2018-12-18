@@ -3,6 +3,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Customer } from './customer';
 
+import { customers } from './tema';
+
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
@@ -28,7 +30,11 @@ export class CustomerService {
   addCustomer (customer: Customer): Observable<Customer> {
     return this.http.post<Customer>(this.customersUrl, customer, httpOptions);
   }
-
+  //----Agrega customers----
+  addcustomers (customers: customers): Observable<customers> {
+    return this.http.post<customers>(this.customersUrl, customers, httpOptions);
+  }
+  //----Agrega customers----
   deleteCustomer (customer: Customer | number): Observable<Customer> {
     const id = typeof customer === 'number' ? customer : customer.id;
     const url = `${this.customersUrl}/${id}`;

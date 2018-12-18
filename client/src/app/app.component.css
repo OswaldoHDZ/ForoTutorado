@@ -1,37 +1,5 @@
-#izquierda  {
-  width: 200px;
-  padding: 10px;
-  display: table-cell;
-  background: #fff;
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
   }
- 
-#central  {
-  padding: 10px;
-  background: #0f6;
-  display: table-cell;
-  width: 660px;
-}
-body  {
-  margin: 0;
-  padding: 0;
-  background: #777;
-  font-family: arial, helvetica, sans-serif;
-  }
- 
-#contenedor {
-  width: 900px;
-  margin: 0 auto;
-  }
- 
-#cabecera {
-  
-}
- 
-#principal  {
-  background: #fff;
-  display: table;
-}
- 
-#pie  {
-  
-}
