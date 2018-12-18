@@ -5,9 +5,18 @@ module.exports = (sequelize, Sequelize) => {
 	  },
 	  lastname: {
 			type: Sequelize.STRING
-	  },
-	  age: {
-		  type: Sequelize.INTEGER
+		},
+		palabrauno: {
+			type: Sequelize.STRING
+		},
+		palabrados: {
+			type: Sequelize.STRING
+		},
+		palabratres: {
+			type: Sequelize.STRING
+		},
+		palabracuatro: {
+			type: Sequelize.STRING
 	  }
 	});
 	

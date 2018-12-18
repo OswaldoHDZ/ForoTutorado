@@ -1,13 +1,18 @@
 const db = require('../config/db.config.js');
 const Customer = db.customers;
 
+
+
 // Post a Customer
 exports.create = (req, res) => {	
 	// Save to PostgreSQL database
 	Customer.create({
 				"firstname": req.body.firstname, 
-				"lastname": req.body.lastname, 
-				"age": req.body.age
+				"lastname": req.body.lastname,
+				"palabrauno":req.body.palabrauno,
+				"palabrados":req.body.palabrados,
+				"palabratres":req.body.palabratres,
+				"palabracuatro":req.body.palabracuatro
 			}).then(customer => {		
 			// Send created customer to client
 			res.json(customer);
